@@ -29,6 +29,16 @@ namespace Searching
             Console.WriteLine($"이진 탐색 결과 위치 : {index4}");
             Console.WriteLine();
 
+            bool[,] graph = new bool[8, 8];
+
+            bool[] dfsVisited;
+            int[] dfsParent;
+            Util.DFS(graph, 0, out dfsVisited, out dfsParent);
+
+            bool[] bfsVisited;
+            int[] bfsParent;
+           //  Util.BFS(graph, 0, out bfsVisited, out bfsParent);
+
 
         }
     }
